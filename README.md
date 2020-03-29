@@ -13,7 +13,7 @@ The requirements are:
 Steps
 1. Download AlexayAB's darknet repository
 
-...```
+```
 git clone https://github.com/AlexeyAB/darknet.git
 ```
 
