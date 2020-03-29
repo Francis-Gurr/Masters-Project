@@ -1,4 +1,4 @@
-# Calcualting the speed of vehicles from video images using machine learning
+# Calculating the speed of vehicles from video images using machine learning
 
 This work uses darknet and YOLO for the object detection.
 YOLO is implemented using AlexayAB's darknet repository: [link]()
