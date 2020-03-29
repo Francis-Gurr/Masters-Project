@@ -12,6 +12,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 
 ---
 
+## Instructions
 ### Object Detection
 ##### 1. Download AlexayAB's darknet repository.
 
@@ -99,6 +100,8 @@ See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
 
 Instructions to be finished.
 See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
+
+---
 
 ## Resources
 
