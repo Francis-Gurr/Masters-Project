@@ -89,7 +89,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 ### Camera Calibration
 
 Instructions to be finished.
-See _Vehicle_Speed_Yolo/calibration_ files.
+See _Vehicle_Speed_Yolo/scripts/calibrate.py file.
    
 ### Tracking
 
