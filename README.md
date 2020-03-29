@@ -8,7 +8,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 * cuDNN 7 - possibly not necessary but everything was ran with cuDNN so cannot say for sure
 * OpenCV 4
 * CMake 3.8
-* Python3 - and the tqdm module (pip3 install tqdm)
+* Python3 - and the tqdm module (`pip3 install tqdm`)
 
 ---
 
