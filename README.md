@@ -11,6 +11,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 * Python3 - and the tqdm module (pip3 install tqdm)
 
 ### Object Detection
+---
 ##### 1. Download AlexayAB's darknet repository.
 
    ```
