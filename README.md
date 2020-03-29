@@ -10,8 +10,9 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 * CMake 3.8
 * Python3 - and the tqdm module (pip3 install tqdm)
 
-### Object Detection
 ---
+
+### Object Detection
 ##### 1. Download AlexayAB's darknet repository.
 
    ```
