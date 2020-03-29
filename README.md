@@ -67,7 +67,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    
   * Create a training, test and validation folder in _darknet/data/Dataset_
   * Flatten the category labels to be of only one singular class, and remove the cyclist and pedestrain classes.
-  * Create all of the necessary config files: _darknet/cfg/yolov3-custom.cfg_, _darknet/cfg/custom.data, darknet/cfg/classes.names
+  * Create all of the necessary config files: _darknet/cfg/yolov3-custom.cfg_, _darknet/cfg/custom.data_, _darknet/cfg/classes.names_
       
 ##### 5. Start training.
    
@@ -91,17 +91,17 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
 ### Camera Calibration
 
 Instructions to be finished.
-See _Vehicle_Speed_Yolo/scripts/calibrate.py file.
+See [_Vehicle_Speed_Yolo/scripts/calibrate.py_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/scripts/calibrate.py) file.
    
 ### Tracking
 
 Instructions to be finished.
-See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
+See [_Vehicle_Speed_Yolo/src/yolo_consol_dll.cpp_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/src/yolo_console_dll.cpp) file.
 
 ### Speed measurements
 
 Instructions to be finished.
-See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
+See [_Vehicle_Speed_Yolo/src/yolo_consol_dll.cpp_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/src/yolo_console_dll.cpp) file.
 
 ---
 
