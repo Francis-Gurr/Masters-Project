@@ -76,12 +76,12 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    ```
    
 ##### 5. Test the model.
-   
-    Test the model by running
-    ```
-    ./darknet detector test cfg/custom.data cfg/yolov3-custom.cfg backup/<weightfile>.weights
-    ```
-    The weight files are saved in the _darknet/backup_ folder
+  
+  Test the model by running
+  ```
+  ./darknet detector test cfg/custom.data cfg/yolov3-custom.cfg backup/<weightfile>.weights
+  ```
+  The weight files are saved in the _darknet/backup_ folder
    
 ### Camera Calibration
 
