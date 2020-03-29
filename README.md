@@ -77,32 +77,31 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    
 ##### 5. Test the model.
    
-   Test the model by running
-   ```
-   ./darknet detector test cfg/custom.data cfg/yolov3-custom.cfg backup/<weightfile>.weights
-   ```
-   The weight files are saved in the _darknet/backup_ folder
+    Test the model by running
+    ```
+    ./darknet detector test cfg/custom.data cfg/yolov3-custom.cfg backup/<weightfile>.weights
+    ```
+    The weight files are saved in the _darknet/backup_ folder
    
 ### Camera Calibration
-   
-   Instructions to be finished.
-   See _Vehicle_Speed_Yolo/calibration_ files.
+
+Instructions to be finished.
+See _Vehicle_Speed_Yolo/calibration_ files.
    
 ### Tracking
-   
-   Instructions to be finished.
-   See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
+
+Instructions to be finished.
+See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
 
 ### Speed measurements
-   
-   Instructions to be finished.
-   See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
-   
+
+Instructions to be finished.
+See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
+
 ## Resources
-   
-   These instructions were written up post completion of the project and there may be some missing steps that were forgotten about.  
-   For any issues encountered during the training please see:
-   
+
+These instructions were written up post completion of the project and there may be some missing steps that were forgotten about.  
+For any issues encountered during the training please see:
   * [AlexayAB/darknet/README.md](https://github.com/AlexeyAB/darknet/blob/master/README.md)
   * [PJReddie YOLO](https://pjreddie.com/darknet/yolo/)
    
