@@ -56,13 +56,13 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    ```
    python3 get_dataset.py
    ```
-   Follow the instructions and enter the path to the raw dataset, the proportion of testing and validation sets.
+   Follow the instructions and enter the path to the raw dataset, the proportion of testing and validation sets.  
    (Recommended: Training - 7, Test - 2, Validation - 1)
    The script will do the following:
    
-      * Create a training, test and validation folder in _darknet/data/Dataset_
-      * Flatten the category labels to be of only one singular class, and remove the cyclist and pedestrain classes.
-      * Create all of the necessary config files: _darknet/cfg/yolov3-custom.cfg_, _darknet/cfg/custom.data, darknet/cfg/classes.names
+  * Create a training, test and validation folder in _darknet/data/Dataset_
+  * Flatten the category labels to be of only one singular class, and remove the cyclist and pedestrain classes.
+  * Create all of the necessary config files: _darknet/cfg/yolov3-custom.cfg_, _darknet/cfg/custom.data, darknet/cfg/classes.names
       
 ##### 5. Start training.
    
@@ -100,11 +100,11 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    
 ## Resources
    
-   These instructions were written up post completion of the project and there may be some missing steps that were forgotten about.
+   These instructions were written up post completion of the project and there may be some missing steps that were forgotten about.  
    For any issues encountered during the training please see:
    
-      *[AlexayAB/darknet/README.md](https://github.com/AlexeyAB/darknet/blob/master/README.md)
-      *[PJReddie YOLO](https://pjreddie.com/darknet/yolo/)
+  *[AlexayAB/darknet/README.md](https://github.com/AlexeyAB/darknet/blob/master/README.md)
+  *[PJReddie YOLO](https://pjreddie.com/darknet/yolo/)
    
    
 
