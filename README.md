@@ -90,12 +90,12 @@ YOLO is implemented using AlexayAB's darknet repository: [link]()
 ### Tracking
    
    Instructions to be finished.
-   See _Vehicle_Speed_Yolo/yolo_dll.cpp file.
+   See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
 
 ### Speed measurements
    
    Instructions to be finished.
-   See _Vehicle_Speed_Yolo/yolo_dll.cpp file.
+   See _Vehicle_Speed_Yolo/yolo_consol_dll.cpp file.
    
 ## Resources
    
