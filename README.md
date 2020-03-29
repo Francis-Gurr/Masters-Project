@@ -103,8 +103,8 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    These instructions were written up post completion of the project and there may be some missing steps that were forgotten about.  
    For any issues encountered during the training please see:
    
-  *[AlexayAB/darknet/README.md](https://github.com/AlexeyAB/darknet/blob/master/README.md)
-  *[PJReddie YOLO](https://pjreddie.com/darknet/yolo/)
+  * [AlexayAB/darknet/README.md](https://github.com/AlexeyAB/darknet/blob/master/README.md)
+  * [PJReddie YOLO](https://pjreddie.com/darknet/yolo/)
    
    
 
