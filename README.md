@@ -90,7 +90,7 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    
 ### Camera Calibration
 
-Place the [/scripts/calibrate.py_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/scripts/calibrate.py) file in the _darknet/scripts_ folder and run
+Place the [_/scripts/calibrate.py_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/scripts/calibrate.py) file in the _darknet/scripts_ folder and run
 ```
 python3 calibrate.py -i <calibration_image_file>
 ```
