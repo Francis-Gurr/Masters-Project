@@ -51,7 +51,9 @@ YOLO is implemented using AlexayAB's darknet repository: [link](https://github.c
    ```
    Check the commandline output and the output _predictions.jpg_ file to ensure everything ran as expected.
 
-##### 4. Download the custom scripts and place them in the _darknet/scripts_ folder.
+##### 4. Place custom scripts in the _darknet/scripts_ folder.
+
+   Place the [_scripts/get_dataset.py_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/scripts/get_dataset.py) and the [_scripts/create_configs.py_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/scripts/create_configs.py) in the _darknet/scripts_ folder
 
 ##### 5. Create the dataset, test, training and config files.
    
