@@ -32,9 +32,11 @@ if os.path.exists(new_dir_path):
         shutil.rmtree(new_dir_path)
         print('Deleted')
 train_path = new_dir_path + 'Train/'
+test_path = new_dir_path + 'Test/'
 valid_path = new_dir_path + 'Valid/'
 unlabelled_path = new_dir_path + 'Unlabelled/'
 os.makedirs(train_path)
+os.makedirs(test_path)
 os.makedirs(valid_path)
 os.makedirs(unlabelled_path)
 
@@ -46,8 +48,23 @@ if old_dir_path[:1] != '/':
 else:
     old_dir_path = old_dir_path + '/'
 
-# Get proportion to training and validation data
-prop = int(input(col_grn + 'Enter the proportion of training to validation data (0 < int < 10): \n>> ' + col_end))
+# Get proportion to training, test and validation data
+prop = []   # [Training, test, validation] proportions
+exit = false
+while(not exit):
+    prop[0] = float(input(col_grn + 'Enter the proportion of training data (0 < val < 1): \n>> ' + col_end))
+    prop[1] = float(input(col_grn + 'Enter the proportion of training data (0 < val < 1): \n>> ' + col_end))
+    prop[2] = float(input(col_grn + 'Enter the proportion of training data (0 < val < 1): \n>> ' + col_end))
+    total = sum(prop)
+    if(total > 1):
+        col_warn + 'Error: The total exceeds 1\n ' + col_end)
+    else:
+        # Change proportions to boundaries of a size 10 set (eg. [0.7, 0.2, 0.1] -> [7, 9, 10])
+        prop = list(map(lambda x: int(x*10), prop))
+        prop[1] = prop[0] + prop[1]
+        prop[2] = prop[1] + prop[2]
+        exit = true
+        
 
 print('Creating "../darknet/data/Dataset"')
 
@@ -59,6 +76,7 @@ labels.sort()
 
 i = 0
 i_train = 0
+i_test = 0
 i_valid = 0
 i_unlabelled = 0
 for img in tqdm(images):
@@ -67,11 +85,15 @@ for img in tqdm(images):
     new_file_path = ''
     # If label exists move image label pair to the new directory
     if lbl in labels:
-        if i%10 < prop:
+        if i%10 < prop[0]:
             # Training set
             new_file_path = '%strain_%05d' % (train_path, i_train)
             i_train+=1
-        else:
+        elif i%10 < prop[1]:
+            # Testing set
+            new_file_path = '%stest_%05d' % (test_path, i_test)
+            i_test+=1
+        elif i%10 < prop[2]:
             # Validation set
             new_file_path = '%svalid_%05d' % (valid_path, i_valid)
             i_valid+=1
