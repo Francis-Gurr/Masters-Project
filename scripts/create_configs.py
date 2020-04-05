@@ -40,24 +40,33 @@ def create_lists(dataset_dir_path):
     f = open(train_list, 'w')
     f.writelines(map(lambda x: x + '\n', train_images))
     f.close
-    print('Created (1/5): ' + train_list)
+    print('Created (1/6): ' + train_list)
 
-    # Create valid.txt list
+    # Create test.txt list
+    test_path = dataset_dir_path + 'Test/'
+    test_list = test_path + 'test.txt'
+    test_images = list(glob.iglob(test_path + '**/*.jpg', recursive=True))
+    f = open(test_list, 'w')
+    f.writelines(map(lambda x: x + '\n', test_images))
+    f.close
+    print('Created (2/6): ' + test_list)
+    
+     # Create valid.txt list
     valid_path = dataset_dir_path + 'Valid/'
     valid_list = valid_path + 'valid.txt'
     valid_images = list(glob.iglob(valid_path + '**/*.jpg', recursive=True))
     f = open(valid_list, 'w')
     f.writelines(map(lambda x: x + '\n', valid_images))
     f.close
-    print('Created (2/5): ' + valid_list)
+    print('Created (3/6): ' + valid_list)
 
-    return train_list, valid_list
+    return train_list, test_list
 
 def create_configs(dataset_dir_path):
     print('Creating required config files')
 
     darknet_path = os.getcwd()
-    train_list, valid_list = create_lists(dataset_dir_path)
+    train_list, test_list = create_lists(dataset_dir_path)
     cfg_dir_path = darknet_path + '/cfg/'
     cfg_path = create_cfg(cfg_dir_path)
     
@@ -73,7 +82,7 @@ def create_configs(dataset_dir_path):
     config = cfg_dir_path + 'custom.data'
     lines = ['classes = 1\n',
             'train = ' + train_list + '\n',
-            'valid = ' + valid_list + '\n',
+            'valid = ' + test_list + '\n',
             'names = ' + names_list + '\n',
             'backup = backup']
     f = open(config, 'w')
