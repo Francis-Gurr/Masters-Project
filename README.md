@@ -97,12 +97,10 @@ python3 calibrate.py -i <calibration_image_file>
    
 ### Tracking
 
-Instructions to be finished.
 See [_Vehicle_Speed_Yolo/src/yolo_consol_dll.cpp_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/src/yolo_console_dll.cpp) file.
 
 ### Speed measurements
 
-Instructions to be finished.
 See [_Vehicle_Speed_Yolo/src/yolo_consol_dll.cpp_](https://github.com/Francis-Gurr/Vehicle_Speed_YOLO/blob/master/src/yolo_console_dll.cpp) file.
 
 ---
